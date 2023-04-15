@@ -86,7 +86,18 @@
         procedimiento convierte la forma de onda alternante a una onda directa con un voltaje pulsante.\par
 
         El pulso en el voltaje de la corriente ya trasformada puede ser `suavizado' mediante el uso de
-        capacitores, resultando en corriente directa más estable.\par
+        capacitores, resultando en corriente directa más estable. Cuando se coloca un capacitor en la salida del 
+        transformador este pasa a denominarse transformador con filtro. Dependiendo de la capacitancia del Capacitor
+        utilizado, el efecto de `suavizado' será proporcional.\par
+        Dadas las características de la onda alterna y la onda rectificada las magnitudes relevantes son:\par
+        \begin{description}
+            \item[$V_P$] \quad \textbf{Voltaje pico}: Es el valor máximo que alcanza el voltaje en la onda de entrada.
+            \item[$V_0$] \quad  \textbf{Voltaje de salida}: Se trata el promedio de voltaje en la salida del rectificador.
+            \item[$I_0$] \quad  \textbf{Corriente de salida}: Es la corriente en la salida del rectificador.
+            \item[$V_{max}$] \quad  \textbf{Voltaje máximo}: Se trata del valor máximo de voltaje que alcanza la onda en la salida del rectificador.
+            \item[$V_{min}$] \quad  \textbf{Voltaje mínimo}: Se trata del valor mínimo de voltaje al que llega el pulso de la onda en la salida del rectificador.
+            \item[$\Delta V_0$] \quad  \textbf{Voltaje de rizo}: Es la diferencia entre el voltaje máximo y el voltaje mínimo en la salida del rectificador.
+        \end{description}
         Existen 3 principales tipos de circuitos rectificadores:\par
             \textbf{Rectificador de media onda.}Solo un diodo es empleado en el proceso de rectificación. Funciona utilizando de la forma más
             básica los fundamentos de funcionamiento básicos de los diodos, enlistados con anterioridad, es
