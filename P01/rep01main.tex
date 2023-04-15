@@ -1,0 +1,229 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{graphicx,wrapfig,fancyhdr,xcolor,lipsum,parskip,multicol,amsmath,textgreek}
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\setlength\headheight{41pt} 
+\rhead{{\color{blue}\rule{1cm}{1cm}}}
+\rhead{\includegraphics[width=1.2cm]{Logo_IPN.png}}
+
+\begin{document}
+    \begin{titlepage}  
+        \centering
+        {\bfseries\LARGE Instituto Politécnico Nacional\par}
+        \vspace{0.5cm}
+        {\scshape\Large Escuela Superior de Computo \par}
+        \vspace{2cm}
+        {\scshape\Huge Reporte: Práctica 01 \par}
+        \vspace{3cm}
+        {\LARGE Electrónica Analógica \par}
+        \vfill
+        {\Large Carpio Becerra Erick Gustavo \par}
+        {\Large Espinoza Vera Fransisco \par}
+        {\Large Portela Nájera Jesús Bambino \par}
+        \vfill
+        {\Large 19 de Abril de 2023 \par}
+    \end{titlepage}
+    \section*{Objetivo}
+    \label{sec:objetivo}
+        Al termino de la práctica, el alumno comprenderá el funcionamiento de los rectificadores simples y de 
+        los rectificadores con filtro de integración; y comparará los resultados obtenidos experimentalmente con los 
+        obtenidos mediante simulación y teóricamente.
+    \section*{Introducción}
+    \label{sec:introduccion}
+        \noindent Un \textbf{diodo} es un componente electrónico de dos terminales, cuya principal característica es
+        su capacidad de permitir el flujo de corriente a través de él mismo en una sola dirección.
+        Es crucial en muchos circuitos electrónicos, ya que permite la conversión de corriente alterna
+        (AC) a corriente directa (DC) mediante la rectificación de la onda, concepto que se abordará
+        con escrutinio. \par
+        El principio de funcionamiento de un diodo se basa en la interacción entre sus materiales
+        semiconductores de tipo N y de tipo P. Típicamente, la constitución de este componente 
+        consiste de este par de tipos de semiconductores, que al unirse se convierten en una unión PN. \par
+        El material tipo P está dopado con impurezas con excedente de espacios (carga positiva),
+        mientras que el material tipo N está dopado con impurezas con excedente de electrones (carga negativa).\par
+        Cuando se aplica un voltaje a través del diodo, los agujeros del semiconductor tipo P y 
+        los electrones en el semiconductor tipo N comienzan a distribuirse sobre la unión.
+        El campo eléctrico en la unión previene que la mayoría de los portadores en el semiconductor
+        atraviesen la unión, pero algunos portadores minoritarios, que son los electrones en el material
+        tipo P y huecos en el material tipo N, son capaces de atravesarla y recombinarse con los 
+        portadores de carga opuesta en el otro lado de la unión. Este proceso produce el agotamiento de 
+        portadores en la vecindad de la unión PN; en otras palabras, no habrán portadores libres en esta zona.\par
+        Si el diodo está en polarización directa, es decir, si la terminal positiva está conectada al
+        material tipo P, y la terminal negativa conectada al material tipo N, el voltaje aplicado al
+        diodo crea un un campo eléctrico que reduce el grosor de la zona de agotamiento, permitiendo
+        así que los portadores mayoritarios fluyan en la unión y en consecuencia, permitiendo el flujo 
+        de corriente a través del diodo.\par
+        En contraste, si el diodo está en polarización inversa, es decir, si la terminal positiva está
+        conectada al material tipo N, y la terminal negativa conectada al material tipo P, el voltaje 
+        aplicado incrementa considerablemente el grosor de la zona de agotamiento, evitando de esta forma
+        que los portadores minoritarios en el semiconductor atraviesen la unión y por lo tanto 
+        bloqueando el flujo de la corriente eléctrica en el componente.\par
+        En consecuencia, el diodo juega el papel de `válvula de un solo sentido', permitiendo el flujo
+        de electrones en sentido, y bloqueándolo en el otro. El voltaje requerido para polarizar el diodo
+        directamente es referido como `caída de tension directa' y típicamente se encuentra el rededor
+        de 0.6 a 1 voltio para diodos de silicio, y 0.2 a 0.3 voltios para diodos de germanio.\par
+        Los diodos tienen numerosa cantidad de aplicaciones en circuitos eléctricos, entre los que se
+        enlistan pero no se limitan a: rectificación, regulación de voltaje, detección de señales.
+        Existen diferentes tipos de diodos: los estándar, diodos Zenner, diodos Schottky y LED's, cada
+        uno diseñado para aplicaciones específicas. Para efectos de esta actividad, los diodos
+        estándar son aquellos relevantes.\par
+        
+        El objetivo de un \textbf{rectificador} es convertir corriente alterna (AC) a corriente directa (DC).
+        Para este punto del curso, es bien sabido que la electricidad que se transporta en las redes
+        mundiales, y que llega a las tomas domesticas e industriales está en corriente alterna, es decir
+        su magnitud varía en función del tiempo, mientras que la corriente directa, utilizada en vasta
+        cantidad de circuitos eléctricos, tiene una magnitud y dirección constantes.\par
+
+        El trabajo del rectificador es permitir que la corriente fluya en una sola dirección, filtrando
+        la parte negativa de la onda de la corriente alterna, permitiendo el flujo solamente de la parte
+        positiva. Esto, mediante el uso de diodos.\par
+
+        Cuando la corriente alterna se aplica a un diodo en el circuito rectificador, este bloque
+        el flujo de corriente durante la mitad negativa del ciclo alternante de corriente, deshaciéndose 
+        de él, mientras que permite el flujo de corriente durante la mitad positiva de dicho ciclo. Este
+        procedimiento convierte la forma de onda alternante a una onda directa con un voltaje pulsante.\par
+
+        El pulso en el voltaje de la corriente ya trasformada puede ser `suavizado' mediante el uso de
+        capacitores, resultando en corriente directa más estable.\par
+        Existen 3 principales tipos de circuitos rectificadores:\par
+            \textbf{Rectificador de media onda.}Solo un diodo es empleado en el proceso de rectificación. Funciona utilizando de la forma más
+            básica los fundamentos de funcionamiento básicos de los diodos, enlistados con anterioridad, es
+            con esta aproximación a la rectificación que la corriente directa de salida es pulsante, y solamente
+            aprovecha la mitad de la onda de alterna en la entrada del circuito.\par
+            Las ecuaciones relevantes en el marco de esta practica referentes a este tipo de rectificador son:\par
+            \begin{multicols}{2}
+                \begin{itemize}
+                    \item$V_p = V_{PI} = V_{rms}\sqrt{2}$
+                    \item \begin{equation*}
+                        V_0=(V_P-V_D)(1-\frac{1}{2fRC})
+                    \end{equation*}
+                    \item $I_0 = V_0 \frac{1}{R}$
+                    \item $V_{max} = V_P - V_D$
+                    \item \begin{equation*}
+                        V_{min}=(V_P-V_D)(1-\frac{1}{fRC})
+                    \end{equation*}
+                    \item \begin{equation*}
+                        \Delta  V_0 = \frac{V_P-V_D}{fRC}
+                    \end{equation*}
+                \end{itemize}
+            \end{multicols}
+
+            \textbf{Rectificador de onda completa.}  Emplea dos diodos para convertir tanto la parte positiva como la negativa de la onda de corriente alterna
+            en la entrada del circuito. Esto es posible gracias a un transformador con derivación central, 
+            el cual divide al voltaje alterno en dos partes iguales. El par de diodos son utilizados para 
+            conducir la corriente durante cada medio ciclo de la onda AC, resultando así en una salida de 
+            corriente directa más estable en comparación con la alternativa anterior.\par
+            Las ecuaciones relevantes en el marco de esta practica referentes a este tipo de rectificador son:\par
+            \begin{multicols}{2}
+                \begin{itemize}
+                    \item$V_p = V_{PI} = V_{rms}\sqrt{2}$
+                    \item \begin{equation*}
+                        V_0=(\frac{V_P}{2}-V_D)(1-\frac{1}{4fRC})
+                    \end{equation*}
+                    \item $I_0 = V_0 \frac{1}{R}$
+                    \item $V_{max} = \frac{V_P}{2} - V_D$
+                    \item \begin{equation*}
+                        V_{min}=(\frac{V_P}{2}-V_D)(1-\frac{1}{fRC})
+                    \end{equation*}
+                    \item \begin{equation*}
+                        \Delta  V_0 = \frac{\frac{V_P}{2}-V_D}{2fRC}
+                    \end{equation*}
+                \end{itemize}
+            \end{multicols}
+
+
+            \textbf{Rectificador de onda completa tipo puente.}Se trata de otro tipo de rectificador de onda completa, este utiliza 4 diodos en un arreglo 
+            puente  para convertir la señal alterna a directa. Elimina la necesidad de un transformador
+             con derivación central, beneficiando su factor de forma y relación efectividad - costo. El
+             rectificador tipo puente conduce la corriente en ambas mitades del ciclo alterno, resultando así
+             en la forma más estable de señal de salida directa de entre este trio de alternativas.\par
+             Las ecuaciones relevantes en el marco de esta practica referentes a este tipo de rectificador son:\par
+             \begin{multicols}{2}
+                \begin{itemize}
+                    \item$V_p = V_{PI} = V_{rms}\sqrt{2}$
+                    \item \begin{equation*}
+                        V_0=(V_P-2V_D)(1-\frac{1}{4fRC})
+                    \end{equation*}
+                    \item $I_0 = V_0 \frac{1}{R}$
+                    \item $V_{max} = V_P - 2V_D$
+                    \item \begin{equation*}
+                        V_{min}=(V_P-2V_D)(1-\frac{1}{2fRC})
+                    \end{equation*}
+                    \item \begin{equation*}
+                        \Delta  V_0 = \frac{V_P-2V_D}{2fRC}
+                    \end{equation*}
+                \end{itemize}
+            \end{multicols}
+
+        A continuación los diagramas de estos rectificadores.\newpage %eliminar después de agregar los diagramas, deben quedar en la hoja, no más%
+        
+        \section*{Materiales}
+        \label{sec:materiales}
+        \begin{itemize}
+            \item [] 8 \qquad Diodos 1N4003
+            \item [] 3 \qquad Resistencias de 100\textOmega\ a 10W
+            \item [] 1 \qquad Transformador con derivación central de 24V/1A
+            \item [] 1 \qquad Capacitor electrolítico de 470\textmu F a 50 V
+            \item [] 1 \qquad Capacitor electrolítico de 2200\textmu F a 50 V
+            \item [] 1 \qquad Clavija
+            \item [] 1 \qquad Metro de cable 14
+            \item [] 1 \qquad Protoboard
+        \end{itemize}
+        
+        
+        \section*{Desarrollo y resultados experimentales}
+        \label{sec:desarrollo}
+
+        \section*{Análisis matemáticos}
+        \label{sec:calculos}
+
+        \section*{Simulación de práctica}
+        \label{sec:simulador}
+
+        \section*{Análisis de resultados}
+        \label{sec:resultados}
+
+        \section*{Cuestionario}
+        \label{sec:cuestionario}
+        \begin{enumerate}
+            \item \textbf{Menciona la importancia de los rectificadores de voltaje.}\par
+                Los rectificadores de voltaje son de gran importancia en la electrónica aplicada ya que son la única forma de convertir
+                la corriente eléctrica de alterna, que es la forma en la que se distribuye en las redes mundiales, a directa, que es como 
+                se utiliza en la mayoría de los circuitos eléctricos. Por lo que sin estos, toda la infraestructura eléctrica en el mundo quedaría inservible. 
+            \item \textbf{Explica la diferencia que existe entre un rectificador de media onda y uno de onda completa}\par
+                El rectificador de media onda utiliza un solo diodo para rectificar la señal, mientras que el de onda completa utiliza dos, por el mismo motivo,
+                el rectificador de media onda `desperdicia' la mitad negativa de la señal dadas sus limitaciones, mientras que, a pesar de utilizar la caída de tensión de
+                dos diodos, el rectificador de onda completa aprovecha mejor la mitad negativa de la señal de entrada. También es importante mencionar que el rectificador de onda completa necesita de 
+                un transformador con derivación central para funcionar.
+            \item \textbf{¿Cuál es la diferencia de un rectificador de onda complete con derivación central y del tipo puente?}\par
+                El rectificador tipo puente no requiere de un transformador con derivación central, no obstante requiere de un arreglo con dos diodos más que el rectificador con derivación
+                central. El arreglo de diodos del rectificador tipo puente permite a la corriente fluir en ambas mitades del ciclo alternante sin necesidad de dividir el voltaje, por lo que es significativamente
+                más eficiente que su contraparte y por las mismas razones más ampliamente usado en la electrónica.
+            \item \textbf{¿Cómo se mide el voltaje de salida del rectificador?}\par
+                Se colocan las puntas del multímetro en posición para medir voltaje en la resistencia de carga del circuito; es decir, en paralelo a sus terminales y en configuración
+                de corriente directa, dado que la señal ya se encuentra rectificada.
+            \item \textbf{¿Cómo se mide el voltaje de rizo del rectificador?}\par
+                Necesita utilizarse el osciloscopio, se coloca en paralelo a las terminales de la resistencia de carga en modo de medición de corriente alterna.
+            \item \textbf{Establecer las ventajas que tienen los rectificadores con filtro sobre los rectificadores con filtro sobre los rectificadores sin filtro.}\par    
+                Un rectificador con filtro tiene la característica de que la onda rectificada, es decir, aquella medida en la resistencia de carga del circuito tiene una pulsación significativamente menos 
+                pronunciada que un rectificador sin filtro; en otras palabras, el efecto del filtro es que el voltaje de salida es bastante más parecido a un voltaje constante que a una serie de pulsaciones, que 
+                es como se observa la onda en el rectificador sin filtro, mejorando significativamente el $V_{rms}$ de salida.
+        \end{enumerate}
+
+        \section*{Conclusiones}
+        \label{sec:conclusiones}
+        \textbf{Carpio Becerra Erick Gustavo}\par
+        \textbf{Espinoza Vera Fransisco}\par
+        \textbf{Portela Nájera Jesús Bambino}\par
+
+        \section*{Referencias}
+        \label{sec:referencias}
+        \begin{itemize}
+            \item Electricalacademia.com, 2018. [Online]. Available:\par\ https://electricalacademia.com/electronics/diode-definition-working-principle-construction/. [Accessed: Apr. 9, 2023]
+            \item Matsusada Precision Inc, How diodes work and what used for. Matsusada Precision, Nov. 10, 2021. [Online]. Available: https://www.matsusada.com/column/\par\ words\_diode.html. [Accessed: Apr. 09, 2023]
+            \item T. R. Kuphaldt, ``Rectifier Circuits´´ Allaboutcircuits.com, Feb. 12, 2015. \par\ [Online]. Available: https://www.allaboutcircuits.com/textbook/\par\ semiconductors/chpt-3/rectifier-circuits/. [Accessed: Apr. 11, 2023]
+        \end{itemize}
+        
+\end{document}
