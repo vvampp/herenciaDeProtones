@@ -1,8 +1,8 @@
 \documentclass[12pt]{article}
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage[spanish]{babel}
-\usepackage{graphicx,wrapfig,fancyhdr,xcolor,lipsum,parskip,multicol,amsmath,textgreek}
-
+\usepackage{graphicx,adjustbox,wrapfig,fancyhdr,xcolor,lipsum,parskip,multicol,amsmath,textgreek,enumitem}
+\graphicspath{{./imgs/}}
 \pagenumbering{arabic}
 \pagestyle{fancy}
 \setlength\headheight{41pt} 
@@ -186,6 +186,269 @@
         
         \section*{Desarrollo y resultados experimentales}
         \label{sec:desarrollo}
+        \begin{enumerate}
+            \item\textbf{Rectificador de media onda.}
+            Armar el circuito de la Fig. 1.1, el transformador es alimentado de la red eléctrica de 127 Vrms a 60
+            Hz.\par
+            \begin{center}
+                \includegraphics*[]{fig1-1.png}
+            \end{center}
+            Mediciones\par
+            \begin{enumerate}
+                \item Medir el voltaje a la salida del transformador (V1) con un multímetro en la opción CA en
+                los nodos 1 y 0 del circuito, posteriormente el voltaje de la resistencia de carga (V0) en la
+                opción CD del multímetro en los nodos 2 y 0, finalmente medir la corriente de salida (I0)
+                en la resistencia R1 con el multímetro en la opción CD, registrar los valores obtenidos en la
+                Tabla 1.1.\par
+                \begin{center}
+                    \includegraphics*[scale=0.55]{tabla1-1.png}
+                \end{center}
+                \item Mediante el osciloscopio medir el voltaje a la salida del transformador (V1) colocando el
+                canal 1 del osciloscopio en los nodos 1 y 0 y medir el voltaje de salida (V0) colocando el
+                canal 2 en los nodos 2 y 0. Graficar las señales que se obtienen a la entrada y la salida del
+                rectificador en la Fig. 1.2, ambos canales deben de estar en el modo de CD. De la señal del
+                canal 1 medir el voltaje pico (VP) a la entrada del rectificador y de la señal del canal 2 medir
+                el voltaje pico menos el voltaje del diodo (VP – VD) y el voltaje de salida (V0) del rectificador,
+                calcular el voltaje del diodo (VD) y la corriente de salida (I0) del rectificador, registrar los
+                datos obtenidos en Tabla 1.2.
+                \begin{center}
+                    \includegraphics*[scale=0.75]{fig1-2.png}
+                    \includegraphics*[scale=0.2]{img1-21.jpg}
+                    \includegraphics*[scale=0.2]{img1-22.jpg}
+                    \includegraphics*[scale=0.55]{tabla1-2.png}
+                \end{center}
+            \end{enumerate}
+            \item\textbf{Rectificador de media onda con filtro.}\par
+            Armar el circuito de la Fig. 1.3, el transformador es alimentado de la red eléctrica de 127 Vrms a 60
+            Hz.\par
+            \begin{center}
+                \includegraphics*[scale=0.55]{fig1-3.png}
+            \end{center}
+            \par Mediciones\par
+            \begin{enumerate}
+                \item Medir el voltaje a la salida del transformador (V1) con un multímetro en la opción CA en
+                los nodos 1 y 0 del circuito, medir el voltaje de la resistencia de carga (V0) con el multímetro
+                en la opción CD, en los nodos 2 y 0 y medir la corriente de salida (I0) con el multímetro en
+                la opción CD en la resistencia R1, registrar los valores obtenidos en la Tabla 1.3.
+                \begin{center}
+                    \includegraphics*[scale=0.55]{tabla1-3.png}
+                \end{center}
+                \item Mediante el osciloscopio medir el voltaje de entrada (V1) colocando el canal 1 en los nodos
+                1 y 0 y medir el voltaje de salida (V0) colocando el canal 2 en los nodos 2 y 0, ambos canales
+                deben de estar en el modo de CD. Graficar las señales obtenidas del voltaje de entrada y de
+                la salida en la Fig. 1.4. De la señal del canal 1 medir el voltaje pico (VP) de la entrada del
+                rectificador y de la señal del canal 2 medir el voltaje máximo (Vmax), el voltaje mínimo (Vmin)
+                y el voltaje de salida (V0), además calcular la corriente de salida (I0), registrar los valores
+                obtenidos en la Tabla 1.4.
+                \begin{center}
+                    \includegraphics*[scale=0.6]{fig1-4.png}
+                    \includegraphics*[scale=0.2]{img1-41.jpg}
+                    \includegraphics*[scale=0.2]{img1-42.jpg}
+                    \includegraphics*[scale=0.45]{tabla1-4.png}
+                \end{center}
+                \item Medir el voltaje de rizo del rectificador (ΔV0), colocando el canal 2 del osciloscopio en los
+                nodos 2 y 0, el canal 2 debe de estar en el modo de CA. Graficar la señal obtenida del voltaje
+                de rizo en la Fig. 1.5 y medir el valor del voltaje de rizo (ΔV0), registrar el valor obtenido
+                en la Tabla 1.4.
+                \includegraphics*[scale=0.45]{fig1-5.png}
+                Cambiar el capacitor C1 de 470 µF por un capacitor de 2,200 µF; realizar las mismas
+                mediciones del inciso a) y registrar los valores obtenidos en la Tabla 1.3; realizas las mediciones del inciso b) y registrar la medición en la Tabla 1.4, además graficar las señales
+                en la Fig. 1.6; y realizar las mediciones del inciso c) y registrar la medición en la Tabla 1.4,
+                además graficar la señal en la Fig. 1.7.
+                \begin{center}
+                    \includegraphics*[scale=0.47]{fig1-6.png}
+                    \includegraphics*[scale=0.45]{fig1-7.png}
+                \end{center}
+            \end{enumerate}
+            \item \textbf{Rectificador de onda completa con derivación central.}
+            Armar el circuito de la Fig. 1.8, el transformador es alimentado de la red eléctrica de 127 Vrms a
+            60 Hz.
+            \begin{center}
+                \includegraphics*[scale=0.57]{fig1-8.png}
+            \end{center}
+            \par Mediciones \par
+            \begin{enumerate}
+                \item Medir el voltaje de las fuentes senoidal (V1 y V2) con un multímetro en la opción CA en los
+                nodos 1 y 2 del circuito y el voltaje de la resistencia de carga (V0) con el multímetro en la
+                opción CD en los nodos 3 y 0, además medir la corriente de salida (I0) en la resistencia R1
+                con el multímetro en la opción CD, registrar los valores obtenidos en la Tabla 1.5.
+                \begin{center}
+                    \includegraphics*[scale=0.57]{tabla1-5.png}
+                \end{center}
+                \item Mediante el osciloscopio medir el voltaje de entrada (V1) colocando el canal 1 en los nodos
+                1 y 0 y medir el voltaje de salida (V0) colocando el canal 2 en los nodos 3 y 0. Graficar las
+                señales que se obtienen a la entrada y la salida del rectificador en la Fig. 1.9, ambos canales
+                deben de estar en el modo de CD. De la señal del canal 1 medir el voltaje pico entre dos
+                (VP/2) de la entrada del rectificador y de la señal del canal 2 medir el voltaje pico menos el
+                voltaje del diodo (VP/2 – VD) y el voltaje de salida (V0) del rectificador, calcular el voltaje
+                del diodo (VD) y la corriente de salida (I0) del rectificador, registrar los datos obtenidos en
+                Tabla 1.6.
+                \begin{center}
+                    \includegraphics*[scale=0.57]{fig1-9.png}
+                    \includegraphics*[scale=0.27]{img1-90.jpg}
+                    \includegraphics*[scale=0.27]{img1-91.jpg}
+                    \includegraphics*[scale=0.57]{tabla1-6.png}
+                \end{center}
+            
+            \end{enumerate}
+            \item \textbf{Rectificador de onda completa con derivación central con filtro.}\par
+            Armar el circuito de la Fig. 1.10, el transformador es alimentado de la red eléctrica de 127 Vrms a
+            60 Hz.\par\
+            \begin{center}
+                \includegraphics*[scale=0.57]{fig1-10.png}
+            \end{center}
+            Mediciones\par
+            \begin{enumerate}
+                \item Medir el voltaje de la fuente senoidal (V1 y V2) con un multímetro en la opción CA en los
+                nodos 1 y 2 del circuito, medir el voltaje de la resistencia de carga (V0) con el multímetro
+                en la opción CD, en los nodos 3 y 0 y medir la corriente de salida (I0) en la resistencia R1
+                con el multímetro en la opción CD, registrar los valores obtenidos en la Tabla 1.7.
+                \begin{center}
+                    \includegraphics*[scale=0.55]{tabla1-7.png}
+                \end{center}
+                \item Mediante el osciloscopio medir el voltaje de entrada (V1) colocando el canal 1 en los nodos
+                1 y 0; medir el voltaje de salida (V0) colocando el canal 2 en los nodos 3 y 0, ambos canales
+                deben de estar en el modo de CD. Graficar las señales obtenidas del voltaje de entrada y de
+                la salida en la Fig. 1.11. De la señal del canal 1 medir el voltaje pico (VP/2) de la entrada del
+                rectificador y de la señal del canal 2 medir el voltaje máximo (Vmax), el voltaje mínimo (Vmin)
+                y el voltaje de salida (V0), además calcular la corriente de salida (I0), registrar los valores
+                obtenidos en la Tabla 1.8.
+                \begin{center}
+                    \includegraphics*[scale=0.45]{fig1-11.png}
+                    \includegraphics*[scale=0.45]{tabla1-8.png}
+                \end{center}
+                \item Medir el voltaje de rizo del rectificador (ΔV0), colocando el canal 2 del osciloscopio en los
+                nodos 3 y 0, el canal 2 debe de estar en el modo de CA. Graficar la señal obtenida del voltaje
+                de rizo en la Fig. 1.12 y medir el valor del voltaje de rizo (ΔV0), registrar el valor obtenido
+                en la Tabla 1.8.
+                \begin{center}
+                    \includegraphics*[scale=0.45]{fig1-12.png}
+                \end{center}
+                \item Cambiar el capacitor de 470 µF por un capacitor de 2,200 µF y realizar las mismas
+                mediciones del inciso a), registrar los valores obtenidos en la Tabla 1.7; realizas las
+                mediciones del inciso b), registrar la medición en la Tabla 1.8 y graficar las señales en la
+                Fig. 1.13; y realizar las mediciones del inciso c), registrar la medición en la Tabla 1.8 y
+                graficar las señales en la Fig. 1.14.
+                \begin{center}
+                    \includegraphics*[scale=0.45]{fig1-13.png}
+                    \includegraphics*[scale=0.45]{fig1-14.png}
+                \end{center}
+            \end{enumerate}
+            \item \textbf{Rectificador de onda completa tipo punte.}\par
+            \begin{center}
+                \includegraphics*[scale=0.7]{fig1-15.png}
+            \end{center}
+            Mediciones\par
+            \begin{enumerate}
+                \item Medir el voltaje de la fuente senoidal (V1) con un multímetro en la opción CA en los nodos
+                1 y 2 del circuito y el voltaje de la resistencia de carga (V0) con el multímetro en la opción
+                CD en los nodos 3 y 0, y medir la corriente de salida (I0) en la resistencia R1 con el
+                multímetro en la opción CD, registrar los valores obtenidos en la Tabla 1.9.
+                \begin{center}
+                    \includegraphics*[scale=0.6]{tabla1-9.png}
+                \end{center}
+                \item Mediante el osciloscopio, medir el voltaje de entrada (V1) colocando el canal 1 en los nodos
+                1 y 2, el canal debe de estar en modo CD y graficar la señal que se obtiene a la entrada del
+                rectificador en la Fig. 1.16. De la señal del canal 1 medir el voltaje pico (VP) de la entrada
+                del rectificador, registrar el valor obtenido en la Tabla 1.10.
+                \begin{center}
+                    \includegraphics*[scale=0.45]{fig1-16.png}
+                    \includegraphics*[scale=0.45]{tabla1-10.png}
+                \end{center}
+                \item Desconectar el canal 1 del osciloscopio y medir el voltaje de salida (Vo) colocar el canal 2 en
+                los nodos 3 y 0, el canal debe de estar en modo CD. Graficar la señal que se obtiene a la
+                salida del rectificador en la Fig. 1.17. De la señal del canal 2 medir el voltaje pico menos dos
+                veces el voltaje del diodo (VP – 2VD) y el voltaje de salida (V0) del rectificador, calcular el
+                voltaje del diodo (VD) y la corriente de salida (I0) del rectificador, registrar los datos
+                obtenidos en Tabla 1.10.
+                \begin{center}
+                    \includegraphics*[scale=0.5]{fig1-17.png}
+                \end{center}
+            \end{enumerate}
+            \item \textbf{Rectificador de onda completa tipo punte con filtro.}\par
+            Armar el circuito de la Fig. 1.18, el transformador es alimentado de la red eléctrica de 127 Vrms a
+            60 Hz.\par
+            \begin{center}
+                \includegraphics*[scale=0.6]{fig1-18.png}
+            \end{center}
+            Mediciones\par
+            \begin{enumerate}
+                \item Medir el voltaje de la fuente senoidal (V1) con un multímetro en la opción CA en los nodos
+                1 y 2 del circuito, medir el voltaje de la resistencia de carga (V0) con el multímetro en la
+                opción CD en los nodos 3 y 0 y medir la corriente de salida (I0) en la resistencia R1 con el
+                multímetro en la opción CD, registrar los valores obtenidos en la Tabla 1.11.
+            
+                \begin{center}
+                    \includegraphics*[scale=0.6]{tabla1-11.png}
+                \end{center}
+                \item Mediante el osciloscopio medir el voltaje de entrada (V1) colocando el canal 1 del
+                osciloscopio en los nodos 1 y 2 y graficar las señales que se obtienen a la entrada del
+                rectificador de la Fig. 1.19. De la señal del canal 1 medir el voltaje pico (VP) de la entrada
+                del rectificador, registrar el valor obtenido en la Tabla 1.12.
+                
+                \begin{center}
+                    \includegraphics*[scale=0.45]{fig1-19.png}
+                    \includegraphics*[scale=0.45]{tabla1-12.png}
+                \end{center}
+            \item Desconectar el canal 1 del osciloscopio y medir el voltaje de salida (Vo), colocando el canal
+            2 en los nodos 3 y 0, graficar las señales que se obtienen a la salida del rectificador de la Fig.
+            1.20, ambos canales deben de estar en el modo de CD. De la señal del canal 2 medir el
+            voltaje máximo (Vmax), el voltaje mínimo (Vmin) y el voltaje de salida (V0), además calcular
+            la corriente de salida (I0), registrar los valores obtenidos en la Tabla 1.12.
+            \begin{center}
+                \includegraphics*[scale=0.45]{fig1-20.png}
+            \end{center}
+            \item Medir el voltaje de rizo del rectificador (ΔV0), colocando el canal 2 del osciloscopio en los
+            nodos 3 y 0, el canal 2 debe de estar en el modo de CA. Graficar la señal obtenida del voltaje
+            de rizo en la Fig. 1.21, y medir el valor de voltaje de rizo (ΔV0), registrar el valor obtenido
+            en la Tabla 1.12.
+            \begin{center}
+                \includegraphics*[scale=0.45]{fig1-21.png}
+                \includegraphics*[scale=0.2]{img1-212.jpg}
+            \end{center}
+
+            \item Cambiar el capacitor de 470 µF por un capacitor de 2,200 µF y realizar las mismas
+            mediciones del inciso a), registrar los valores obtenidos en la Tabla 1.11; realizas las
+            mediciones del inciso b) y c), registrar la medición en la Tabla 1.12 y graficar las señales en
+            la Fig. 1.22 y Fig. 1.23; y realizar las mediciones del inciso d), registrar la medición en la
+            Tabla 1.12 y graficar las señales en la Fig. 1.24.
+
+            \begin{center}
+                \includegraphics*[scale=0.45]{fig1-22.png}
+                \includegraphics*[scale=0.45]{fig1-23.png}
+                \includegraphics*[scale=0.45]{fig1-24.png}
+                \includegraphics*[scale=0.2]{img1-24.jpg}
+            \end{center}
+
+
+        
+
+        
+        \end{enumerate}
+
+
+        \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         \section*{Análisis matemáticos}
         \label{sec:calculos}
