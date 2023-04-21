@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.11)  19 APR 2023 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.11)  19 APR 2023 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1173,35 +1173,265 @@ Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 421.
 [21 <./imgs//fig1-22.png> <./imgs//fig1-23.png> <./imgs//fig1-24.png>]
 File: ./imgs//Logo_IPN.png Graphic file (type png)
 <use ./imgs//Logo_IPN.png>
-Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 485.
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 428.
 (pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
  [22 <./imgs//img1-24.jpg>]
+<./imgs//an1.jpg, id=221, 1866.975pt x 2585.66pt>
+File: ./imgs//an1.jpg Graphic file (type jpg)
+<use ./imgs//an1.jpg>
+Package pdftex.def Info: ./imgs//an1.jpg  used on input line 447.
+(pdftex.def)             Requested size: 373.3884pt x 517.12285pt.
 File: ./imgs//Logo_IPN.png Graphic file (type png)
 <use ./imgs//Logo_IPN.png>
-Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 505.
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 447.
 (pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
  [23]
 File: ./imgs//Logo_IPN.png Graphic file (type png)
 <use ./imgs//Logo_IPN.png>
-Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 524.
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 447.
 (pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
- [24] (./rep01main.aux
+ [24 <./imgs//an1.jpg>]
+<./imgs//an2.jpg, id=231, 1862.96pt x 2549.525pt>
+File: ./imgs//an2.jpg Graphic file (type jpg)
+<use ./imgs//an2.jpg>
+Package pdftex.def Info: ./imgs//an2.jpg  used on input line 448.
+(pdftex.def)             Requested size: 372.5854pt x 509.89597pt.
+<./imgs//an3.jpg, id=233, 1690.315pt x 2300.595pt>
+File: ./imgs//an3.jpg Graphic file (type jpg)
+<use ./imgs//an3.jpg>
+Package pdftex.def Info: ./imgs//an3.jpg  used on input line 449.
+(pdftex.def)             Requested size: 338.057pt x 460.11086pt.
+<./imgs//an4.jpg, id=235, 1798.72pt x 2457.18pt>
+File: ./imgs//an4.jpg Graphic file (type jpg)
+<use ./imgs//an4.jpg>
+Package pdftex.def Info: ./imgs//an4.jpg  used on input line 450.
+(pdftex.def)             Requested size: 359.73763pt x 491.42729pt.
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 451.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [25 <./imgs//an2.jpg>]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 451.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [26 <./imgs//an3.jpg>]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 451.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [27 <./imgs//an4.jpg>]
+<./imgs//sim1.jpg, id=250, 963.6pt x 623.32875pt>
+File: ./imgs//sim1.jpg Graphic file (type jpg)
+<use ./imgs//sim1.jpg>
+Package pdftex.def Info: ./imgs//sim1.jpg  used on input line 462.
+(pdftex.def)             Requested size: 385.43317pt x 249.32707pt.
+<./imgs//medSim1.png, id=252, 520.19344pt x 84.315pt>
+File: ./imgs//medSim1.png Graphic file (type png)
+<use ./imgs//medSim1.png>
+Package pdftex.def Info: ./imgs//medSim1.png  used on input line 463.
+(pdftex.def)             Requested size: 234.08487pt x 37.94138pt.
+<./imgs//medSim2.png, id=254, 701.62125pt x 88.83188pt>
+File: ./imgs//medSim2.png Graphic file (type png)
+<use ./imgs//medSim2.png>
+Package pdftex.def Info: ./imgs//medSim2.png  used on input line 464.
+(pdftex.def)             Requested size: 315.72664pt x 39.97397pt.
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 462--465
+ [] 
+ []
+
+<./imgs//sim2.jpg, id=256, 963.6pt x 619.56468pt>
+File: ./imgs//sim2.jpg Graphic file (type jpg)
+<use ./imgs//sim2.jpg>
+Package pdftex.def Info: ./imgs//sim2.jpg  used on input line 468.
+(pdftex.def)             Requested size: 337.26506pt x 216.85088pt.
+<./imgs//sim3.jpg, id=258, 963.6pt x 632.3625pt>
+File: ./imgs//sim3.jpg Graphic file (type jpg)
+<use ./imgs//sim3.jpg>
+Package pdftex.def Info: ./imgs//sim3.jpg  used on input line 469.
+(pdftex.def)             Requested size: 337.26506pt x 221.33018pt.
+<./imgs//medSim3.png, id=260, 382.42876pt x 104.64093pt>
+File: ./imgs//medSim3.png Graphic file (type png)
+<use ./imgs//medSim3.png>
+Package pdftex.def Info: ./imgs//medSim3.png  used on input line 470.
+(pdftex.def)             Requested size: 172.09134pt x 47.08797pt.
+<./imgs//medSim4.png, id=262, 786.68906pt x 124.21407pt>
+File: ./imgs//medSim4.png Graphic file (type png)
+<use ./imgs//medSim4.png>
+Package pdftex.def Info: ./imgs//medSim4.png  used on input line 471.
+(pdftex.def)             Requested size: 354.0068pt x 55.8958pt.
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 472.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+[28 <./imgs//sim1.jpg> <./imgs//medSim1.png> <./imgs//medSim2.png>]
+<./imgs//sim4.jpg, id=270, 963.6pt x 654.19406pt>
+File: ./imgs//sim4.jpg Graphic file (type jpg)
+<use ./imgs//sim4.jpg>
+Package pdftex.def Info: ./imgs//sim4.jpg  used on input line 475.
+(pdftex.def)             Requested size: 385.43317pt x 261.67299pt.
+<./imgs//medSim5.png, id=272, 691.83469pt x 83.5622pt>
+File: ./imgs//medSim5.png Graphic file (type png)
+<use ./imgs//medSim5.png>
+Package pdftex.def Info: ./imgs//medSim5.png  used on input line 476.
+(pdftex.def)             Requested size: 311.32272pt x 37.60263pt.
+<./imgs//medSim6.png, id=274, 694.84593pt x 84.315pt>
+File: ./imgs//medSim6.png Graphic file (type png)
+<use ./imgs//medSim6.png>
+Package pdftex.def Info: ./imgs//medSim6.png  used on input line 477.
+(pdftex.def)             Requested size: 312.67776pt x 37.94138pt.
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 475--478
+ [] 
+ []
+
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 478.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+[29 <./imgs//sim2.jpg> <./imgs//sim3.jpg> <./imgs//medSim3.png> <./imgs//medSim4.png>]
+<./imgs//sim5.jpg, id=283, 963.6pt x 615.0478pt>
+File: ./imgs//sim5.jpg Graphic file (type jpg)
+<use ./imgs//sim5.jpg>
+Package pdftex.def Info: ./imgs//sim5.jpg  used on input line 481.
+(pdftex.def)             Requested size: 385.43317pt x 246.01476pt.
+<./imgs//sim6.jpg, id=285, 963.6pt x 605.26125pt>
+File: ./imgs//sim6.jpg Graphic file (type jpg)
+<use ./imgs//sim6.jpg>
+Package pdftex.def Info: ./imgs//sim6.jpg  used on input line 482.
+(pdftex.def)             Requested size: 385.43317pt x 242.1002pt.
+<./imgs//medSim7.png, id=287, 461.47406pt x 95.6072pt>
+File: ./imgs//medSim7.png Graphic file (type png)
+<use ./imgs//medSim7.png>
+Package pdftex.def Info: ./imgs//medSim7.png  used on input line 483.
+(pdftex.def)             Requested size: 207.66139pt x 43.02283pt.
+<./imgs//medSim9.png, id=289, 788.19469pt x 124.21407pt>
+File: ./imgs//medSim9.png Graphic file (type png)
+<use ./imgs//medSim9.png>
+Package pdftex.def Info: ./imgs//medSim9.png  used on input line 484.
+(pdftex.def)             Requested size: 354.68433pt x 55.8958pt.
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 481--485
+ [] 
+ []
+
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 481--485
+ [] 
+ []
+
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 485.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+[30 <./imgs//sim4.jpg> <./imgs//medSim5.png> <./imgs//medSim6.png>]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 486.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [31 <./imgs//sim5.jpg> <./imgs//sim6.jpg> <./imgs//medSim7.png>]
+<./imgs//sim7.jpg, id=304, 963.6pt x 615.80063pt>
+File: ./imgs//sim7.jpg Graphic file (type jpg)
+<use ./imgs//sim7.jpg>
+Package pdftex.def Info: ./imgs//sim7.jpg  used on input line 489.
+(pdftex.def)             Requested size: 385.43317pt x 246.31589pt.
+<./imgs//medSimFBR1.png, id=306, 519.44063pt x 83.5622pt>
+File: ./imgs//medSimFBR1.png Graphic file (type png)
+<use ./imgs//medSimFBR1.png>
+Package pdftex.def Info: ./imgs//medSimFBR1.png  used on input line 490.
+(pdftex.def)             Requested size: 207.77257pt x 33.42427pt.
+<./imgs//medSimFBR2.png, id=308, 697.8572pt x 88.83188pt>
+File: ./imgs//medSimFBR2.png Graphic file (type png)
+<use ./imgs//medSimFBR2.png>
+Package pdftex.def Info: ./imgs//medSimFBR2.png  used on input line 491.
+(pdftex.def)             Requested size: 279.13792pt x 35.5321pt.
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 489--492
+ [] 
+ []
+
+<./imgs//sim8.jpg, id=310, 963.6pt x 603.75563pt>
+File: ./imgs//sim8.jpg Graphic file (type jpg)
+<use ./imgs//sim8.jpg>
+Package pdftex.def Info: ./imgs//sim8.jpg  used on input line 495.
+(pdftex.def)             Requested size: 385.43317pt x 241.49797pt.
+<./imgs//sim9.jpg, id=312, 963.6pt x 610.53094pt>
+File: ./imgs//sim9.jpg Graphic file (type jpg)
+<use ./imgs//sim9.jpg>
+Package pdftex.def Info: ./imgs//sim9.jpg  used on input line 496.
+(pdftex.def)             Requested size: 385.43317pt x 244.20804pt.
+<./imgs//medSimFBR3.png, id=314, 377.91188pt x 94.85437pt>
+File: ./imgs//medSimFBR3.png Graphic file (type png)
+<use ./imgs//medSimFBR3.png>
+Package pdftex.def Info: ./imgs//medSimFBR3.png  used on input line 497.
+(pdftex.def)             Requested size: 151.16206pt x 37.94107pt.
+<./imgs//medSimFBR4.png, id=316, 784.43062pt x 120.45pt>
+File: ./imgs//medSimFBR4.png Graphic file (type png)
+<use ./imgs//medSimFBR4.png>
+Package pdftex.def Info: ./imgs//medSimFBR4.png  used on input line 498.
+(pdftex.def)             Requested size: 313.76668pt x 48.17914pt.
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 495--499
+ [] 
+ []
+
+
+Overfull \hbox (7.03755pt too wide) in paragraph at lines 495--499
+ [] 
+ []
+
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 499.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+[32 <./imgs//medSim9.png> <./imgs//sim7.jpg> <./imgs//medSimFBR1.png> <./imgs//medSimFBR2.png>]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 502.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [33 <./imgs//sim8.jpg> <./imgs//sim9.jpg> <./imgs//medSimFBR3.png> <./imgs//medSimFBR4.png>]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 537.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [34]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 559.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [35]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 579.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [36]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 602.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [37]
+File: ./imgs//Logo_IPN.png Graphic file (type png)
+<use ./imgs//Logo_IPN.png>
+Package pdftex.def Info: ./imgs//Logo_IPN.png  used on input line 606.
+(pdftex.def)             Requested size: 34.14322pt x 36.56519pt.
+ [38] (./rep01main.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 ) ) 
 Here is how much of TeX's memory you used:
- 8956 strings out of 478287
- 148408 string characters out of 5849289
+ 9157 strings out of 478287
+ 152649 string characters out of 5849289
  548088 words of memory out of 5000000
- 26988 multiletter control sequences out of 15000+600000
+ 27164 multiletter control sequences out of 15000+600000
  476815 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,77p,577b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,16n,77p,1023b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on rep01main.pdf (25 pages, 2559682 bytes).
+Output written on rep01main.pdf (39 pages, 5908315 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 402 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 490 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 765 words of extra memory for PDF output out of 10000 (max. 10000000)
 

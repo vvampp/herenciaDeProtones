@@ -419,60 +419,134 @@
                 \includegraphics*[scale=0.45]{fig1-24.png}
                 \includegraphics*[scale=0.2]{img1-24.jpg}
             \end{center}
-
-
-        
-
-        
-        \end{enumerate}
-
+       
+            \end{enumerate}
 
         \end{enumerate}
 
 
+        \newpage
+       \section*{Análisis teóricos}
+       Realizar los cálculos de los circuitos de las secciones 3.1, 3.3 y 3.5 para obtener los valores de $V_0$,
+       $I_0$ y $V_{PI}$, que corresponden a los rectificadores.\par
+       \begin{itemize}
+           \item Rectificador de media onda
+           \item Rectificador de onda completa con derivación central
+           \item Rectificador de onda completa tipo puente
+       \end{itemize}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        \section*{Análisis matemáticos}
+       Y realizar los cálculos de los circuitos de las secciones 3.2, 3.4 y 3.6 para obtener los valores de $V_0$,
+       $I_0$, $V_{max}$, $V_{min}$ y $\Delta V_0$, que corresponden a los rectificadores.
+       \begin{itemize}
+           \item Rectificador de media onda con filtro
+           \item Rectificador de onda completa con derivación central con filtro
+           \item Rectificador de onda completa tipo puente con filtro
         \label{sec:calculos}
+        \begin{center}
+            \includegraphics*[scale=0.2]{an1.jpg}\newpage
+            \includegraphics*[scale=0.2]{an2.jpg}
+            \includegraphics*[scale=0.2]{an3.jpg}
+            \includegraphics*[scale=0.2]{an4.jpg}
+        \end{center}\newpage
+
+
+
 
         \section*{Simulación de práctica}
         \label{sec:simulador}
 
+        \begin{enumerate}
+            \item \textbf{Transformador de media onda}
+            \begin{center}
+                \includegraphics*[scale=0.4]{sim1.jpg}
+                \includegraphics*[scale=0.45]{medSim1.png}
+                \includegraphics*[scale=0.45]{medSim2.png}
+            \end{center}
+            \item \textbf{Transformador de media onda con filtro}
+            \begin{center}
+                \includegraphics*[scale=0.35]{sim2.jpg}
+                \includegraphics*[scale=0.35]{sim3.jpg}
+                \includegraphics*[scale=0.45]{medSim3.png}             
+                \includegraphics*[scale=0.45]{medSim4.png}
+            \end{center}
+            \item \textbf{Transformador de onda completa con derivación central}
+            \begin{center}
+                \includegraphics*[scale=0.4]{sim4.jpg}
+                \includegraphics*[scale=0.45]{medSim5.png}
+                \includegraphics*[scale=0.45]{medSim6.png}
+            \end{center}
+            \item \textbf{Transformador de onda completa con derivación central con filtro}
+            \begin{center}
+                \includegraphics*[scale=0.4]{sim5.jpg}
+                \includegraphics*[scale=0.4]{sim6.jpg}
+                \includegraphics*[scale=0.45]{medSim7.png}
+                \includegraphics*[scale=0.45]{medSim9.png}
+                
+            \end{center}
+            \item \textbf{Transformador de onda completa tipo puente}
+            \begin{center}
+                \includegraphics*[scale=0.4]{sim7.jpg}
+                \includegraphics*[scale=0.4]{medSimFBR1.png}
+                \includegraphics*[scale=0.4]{medSimFBR2.png}
+            \end{center}
+            \item \textbf{Transformador de onda completa tipo puente con filtro}
+            \begin{center}
+                \includegraphics*[scale=0.4]{sim8.jpg}
+                \includegraphics*[scale=0.4]{sim9.jpg}
+                \includegraphics*[scale=0.4]{medSimFBR3.png}
+                \includegraphics*[scale=0.4]{medSimFBR4.png}
+            \end{center}
+
+        \end{enumerate}
+        \newpage
+
+
+
+
+
+
+
         \section*{Análisis de resultados}
         \label{sec:resultados}
-        Realizar los cálculos de los circuitos de las secciones 3.1, 3.3 y 3.5 para obtener los valores de $V_0$,
-        $I_0$ y $V_{PI}$, que corresponden a los rectificadores.\par
+        Posterior a la escrutiniosa comparación de resultados obtenidos en calculos, simulaciones y mediciones. Se observó desviación, a veces más grande de los esperado pero siempre coherente. 
+        \par\textbf{Resultados de mediciones}
+        Tras realizar un análisis en retrospectiva, se pudieron identificar los problemas determinantes que 
+        causaron que los resultados no cuadraran del todo, los cuales son principalmente dos: el transformador y 
+        los diodos. Hablando del transformador, al no ser este de la mejor calidad, no siempre entregaba el Ampere 
+        completo, por lo que incluso haciendo la misma medición pero en diferentes momentos, los resultados tenían
+        variaciones a veces un tanto significativas.\par Del mismo modo, también se observó un par de veces que el voltaje
+        entregado por el transformador no era el prometido, por lo que se teorizó la posibilidad de que estos sucesos
+        se hayan repetido en las mediciones que ya se habían hecho pero no se prestó atención en el momento.\par
+        En cuanto a los diodos, como se vio en clase, los materiales que los componen son muy susceptibles a la
+        temperatura, por lo que entre más tiempo pasaba conectado el transformador a la corriente, estos más se
+        calentaban y por consecuencia variaban también el resultado en cuestión.
+        \par\textbf{Resultados de simulaciones}
+        En esta sección del desarrollo de la práctica, se observaron cosas un tanto extrañas en el comportamiento
+        del osciloscopio que proporciona el simulador utilizado (Livewire) pues tras diseñar los circuitos, hacer
+        las conexiones pertinentes y modificar adecuadamente los parámetros para observar el comportamiento de 
+        las gráficas, se observaron a veces trazos muy distintos al resto del comportamiento de las ondas.\par Por
+        lo que se llegó a la conclusión de que el simulador tiene problemas para interpretar las señales de ondas
+        que involucran una frecuencia de 60Hz. Además, el simulador no permite seleccionar el modelo del diodo que 
+        se usa y por consiguiente, no se sabe qué voltaje de diodo usa, lo que puede llegar a modificar los resultados.
+        A pesar de los problemas presentados que provocan variaciones en los resultados, se ve con claridad que la tendencia
+        de las gráficas son las mismas tanto en desarrollo experimental, teórico y de simulación. Por lo que es lógico pensar
+        que los resultados son apegados a la realidad.
+        \par\textbf{Resultados de cálculos}
+        Tratándose de los cálculos, se sabe que son el marco de referencia para los parámetros medidos y simulados, pues, las condiciones consideradas en estos no contemplan variables fuera del control de los alumnos, por lo que, arrojan los resultados más apegados al estudio teórico de los circuitos, claro está, a costa
+        de la precisión (no ser confundida con exactitud) en el rubro de la aplicación práctica de estos mismos, lo que se ve claramente reflejado en las discrepancias en relación con las mediciones realizadas en laboratorio en las sesiones.\par
+        Se observan valores de consistencia perfecta, dada la deducción de cada una de las formulas empleadas para el calculo de las magnitudes relevantes por parte del profesor en clases teóricas. Es imposible que las magnitudes carezcan de sentido en el contexto de los transformadores con y sin filtro dado lo anteriormente mencionado.\par
+        Por lo que es pertinente realizar las siguientes observaciones basadas en al análisis de los resultados de los cálculos:
         \begin{itemize}
-            \item Rectificador de media onda
-            \item Rectificador de onda completa con derivación central
-            \item Rectificador de onda completa tipo puente
+            \item El sacrificio de media onda en el rectificador de media onda no es viable si lo que se busca es un proceso de rectificación remotamente eficiente. Esto se ve claramente reflejado en el $V_0$, pues aunque quizás el $V_{max}$ pueda resultar engañoso, principalmente al comparar con el rectificador con derivación central, esta es la magnitud más importante
+            y también la más mermada para esta aproximación al problema en cuestión.
+            \item Probablemente la peor opción en general sea el rectificador de onda completa con derivación central, pues, aunque promete un mejor aprovechamiento de la onda, este aprovechamiento se da solamente de la mitad de la onda.
+            \item Por último, es indiscutible que la mejor opción de entre estos tres rectificadores es el de puente completo, pues, en todas las magnitudes presenta una clara superioridad con respecto a sus dos contrapartes, y no existen compromisos claros que podrían poner en duda su implementación en todo circuito eléctrico. 
+            \item A pesar de los factores causantes de la desviación de los resultados reportados en este documento, a través de las mediciones, simulaciones y cálculos, el comportamiento, ventajas, desventajas y tendencias de cada uno de los 9 circuitos armados es la misma.   
         \end{itemize}
 
 
-        Y realizar los cálculos de los circuitos de las secciones 3.2, 3.4 y 3.6 para obtener los valores de $V_0$,
-        $I_0$, $V_{max}$, $V_{min}$ y $\Delta V_0$, que corresponden a los rectificadores.
-        \begin{itemize}
-            \item Rectificador de media onda con filtro
-            \item Rectificador de onda completa con derivación central con filtro
-            \item Rectificador de onda completa tipo puente con filtro
+
         \end{itemize}
 
         \section*{Cuestionario}
@@ -505,13 +579,21 @@
         \section*{Conclusiones}
         \label{sec:conclusiones}
         \textbf{Carpio Becerra Erick Gustavo}\par
-        \textbf{Espinoza Vera Fransisco}\par
+        El rectificador de onda completa tipo puente con filtro es la mejor opción para rectificar
+        señales electricas alternas de entre las 3 armadas en esta práctica. Esto es evidente posterior 
+        al análisis de resultados. También es relevante mencionar que el papel que juegael  capacitor (el componente que filtra la señal)
+        es muy importante para las magnitudes de la señal de orriente directa.\par
+        \textbf{Espinoza Vera Fransisco}\par Los rectificadores son circuitos electrónicos utilizados para convertir la corriente alterna en corriente continua, cada uno con diferentes características de complejidad, eléctricas y económicas. El rectificador de media onda es el más sencillo y económico, pero produce una corriente con una gran cantidad de ondulaciones. A diferencia del rectificador de onda completa con derivación central que ofrece una corriente continua más estable gracias a su transformador, pero su costo es más elevado. El rectificador de onda completa tipo puente es aún más eficiente y económico que el de derivación central, ya que utiliza diodos para rectificar la corriente alterna y producir una corriente continua sin ondulaciones. En cualquier caso, el uso de un filtro en estos circuitos es importante para reducir las ondulaciones y mejorar la estabilidad de la corriente continua.
+        \par
         \textbf{Portela Nájera Jesús Bambino}\par
-        El proceso de rectificación de señales de corriente alterna es indispensable para la infraestructura eléctrica en todo el mundo
-        , y por esta razón es que esta es una de las principales aplicaciones de los diodos, ya que aprovechan a la perfección las características de su funcionamiento 
-       mediante la unión de un material P y un material N. Por otro lado, la implementación del capacitor es una manera simple, eficiente y barata de mejorar la calidad
-       de la señal en corriente directa en la salida de los rectificadores, por lo que no encuentro escenario en el que sea una alternativa viable implementar un rectificador 
-       sin filtro.
+        La tendencia de las mediciones, posterior a la comparación de todos los resultados 
+        para los 3 tipos de rectificador indican claramente la indiscutible superioridad de eficiencia
+        del rectificador de onda completa tipo puente sobre el otro par de opciones. Esta es 
+        una tendencia constante en los datos obtenidos a partir de calculos, simulaciones y 
+        mediciones. Lo mismo ocurre cuando se contrasta la calidad de señal al comparar el efecto de 
+        los capacitores sobre la onda de salida del rectificador: a mayor capacitancia, el voltaje de
+        rizo disminuye, lo que repercute directamente en la calidad de la señal de salida y la conservación
+        de la energía al realizar la transformación.
 
         \section*{Referencias}
         \label{sec:referencias}
